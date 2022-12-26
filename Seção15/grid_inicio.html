@@ -19,7 +19,12 @@
                 /* atalho
                 grid-template-columns: repeat(3, 100px);
                  */
-                 grid-template-columns: repeat(2,75px) 100px;
+
+                 grid-row-gap: 12px;
+                 grid-column-gap: 5px;
+                 /*atalho pra pra os 2 é grid-gap que recebe 2 valores*/
+               
+
             }
 
             .gridItem{
@@ -27,6 +32,7 @@
                 font-size: 2em;
                 font-family: sans-serif;
                 counter-increment: contador;
+              
             }
             .gridItem::before{
             content:""counter(contador)"";
