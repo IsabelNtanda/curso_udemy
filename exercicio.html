@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabuada</title>
+</head>
+<body>
+  <h1>Tabuada usando o loop while</h1>
+  <script>
+    var num=parseInt(prompt('digite o numero'))
+    var indice=1
+    while(indice<=1000){
+    document.write(num + 'x'+ indice+' =' + (num*indice) + '<br>')
+    if(indice % 10 ===0){
+    document.write('<hr>')
+    }
+    indice=indice+1
+    }
+    document.write('saiu do loop')
+  </script>
+</body>
+</html>
