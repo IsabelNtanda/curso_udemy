@@ -16,15 +16,43 @@
   <body>
     <h1>Lógica de programaçao</h1>
     <button onclick="somar()">+</button>
-    <button onclick="Subtrair()">-</button>
+    <button onclick="subtrair()">-</button>
     <button onclick="multiplicar()">*</button>
-    <button onclick="dividir">/</button>
+    <button onclick="dividir()">/</button>
 
-     <div id="output"></div>
-     
+    <div id="output"></div>
+
     <script>
-      var n = parseInt(prompt("Digite o numero"))
-    
+      var n1 = parseInt(prompt("Digite o numero"))
+      escreve()
+      function escreve() {
+        var output = document.getElementById("output")
+        output.innerHTML = n1
+      }
+
+      function somar() {
+        var n2 = parseFloat(prompt("Digite outro número"))
+        n1 = n1 + n2
+        escreve()
+      }
+
+      function subtrair() {
+        var n2 = parseFloat(prompt("Digite outro número"))
+        n1 = n1 - n2
+        escreve()
+      }
+
+      function multiplicar() {
+        var n2 = parseFloat(prompt("Digite outro número"))
+        n1 = n1 * n2
+        escreve()
+      }
+
+      function dividir() {
+        var n2 = parseFloat(prompt("Digite outro número"))
+        n1 = n1 / n2
+        escreve()
+      }
     </script>
   </body>
 </html>
