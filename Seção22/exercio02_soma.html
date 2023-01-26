@@ -9,6 +9,7 @@
   <body>
     <h1>Trabalhando com Array</h1>
     <script>
+      /*
       var vector = new Array(25, 30, 45, 28, 0, 12, 78, 64)
       var soma = 0
 
@@ -21,6 +22,25 @@
         }
       }
       alert('a soma dos numeros pares:' + soma)
+      */
+
+      // outra forma de fazer
+      var numeros = new Array(25, 30, 45, 28, 0, 12, 78, 64)
+     var somaDosPares =  somaOsPares(numeros)
+      alert('soma é :' + somaDosPares)
+      function somaOsPares(arr) {
+        var soma = 0
+        for (let index = 0; index < arr.length; index++) {
+          console.log(index)
+          console.log(arr[index])
+
+          if (arr[index] % 2 === 0) {
+            soma += arr[index]
+          }
+        }
+       return soma
+      }
+    
     </script>
   </body>
 </html>
