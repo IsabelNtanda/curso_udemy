@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lógica de programação</title>
-</head>
-<body>
-  <h1>Trabalhando com Array</h1>
-  <script>
-    var vector = new Array(25, 30,45, 28, 0 , 12, 78, 64 )
-    var soma = ''
-    
-    if (vector%2==0) {
-      soma+=vector
-      alert(' a soma dos numeros pares é ' + soma)
-    } else {
-     
-    }
-     
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de programação</title>
+  </head>
+  <body>
+    <h1>Trabalhando com Array</h1>
+    <script>
+      var vector = new Array(25, 30, 45, 28, 0, 12, 78, 64)
+      var soma = 0
+
+      for (let index = 0; index < vector.length; index++) {
+        console.log(index)
+        console.log(vector[index])
+
+        if (vector[index] % 2 === 0) {
+          soma += vector[index]
+        }
+      }
+      alert('a soma dos numeros pares:' + soma)
+    </script>
+  </body>
 </html>
