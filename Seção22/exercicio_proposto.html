@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de programação</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <script>
+      var user1 = {
+      nome:'Maria',
+      email:'maria@gmail.com'
+      }
+
+        var user2 = {
+        nome:'João',
+        email:'joao@gmail.com'
+        }
+
+        var user3 = {
+        nome:'Jose',
+        email:'jose@gmail.com'
+        }
+        
+        var users = new Array(user1, user2, user3)
+
+        console.log(users)
+        var i = 0
+        var msg  = ''
+        while(users[i]){
+         console.log(users[0].nome)
+         msg += users[i].nome + ' - ' + users[i].email + '<br>'
+          i++
+        }
+        
+        document.querySelector('#output').innerHTML = msg
+    </script>
+  </body>
+</html>
