@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Escopo</h1>
+    <script>
+      var x = 0 // escopo global
+      var y
+      function mostraX() {
+        var x = 10 // escopo local
+        //  y = 20 sem a palavra var, quer dizer que ele passou pra escopo global
+        var y = 20
+        console.log("mostra x  dentro:", x)
+        console.log("mostra x  dentro:", y)
+      }
+      mostraX()
+      console.log("mostra x fora:", x)
+      console.log(
+        "mostra x fora:",
+        y
+      )(
+        //IFEE
+
+        function(){
+          "use strict" // quando criamos a variavél sem o nome var, ele fica global. então usando 'use strict' ele n permite criar variavel sem a palavra var
+          var isValid = false
+          console.log(isValid)
+          
+
+          function somar(){
+          var n1 = 10
+          var n2 = 30
+          console.log(n1+n2)
+          }
+        })()
+      
+    </script>
+  </body>
+</html>
